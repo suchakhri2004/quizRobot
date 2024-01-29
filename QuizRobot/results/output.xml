@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-29T10:40:14.931224" rpa="false" schemaversion="5">
+<suite id="s1" name="QuizRobot" source="c:\Users\acer\OneDrive - University of Phayao\เดสก์ท็อป\QuizRobot">
+<suite id="s1-s1" name="Test" source="c:\Users\acer\OneDrive - University of Phayao\เดสก์ท็อป\QuizRobot\test.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-01-29T10:40:15.272951" level="INFO">Opening browser 'firefox' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-29T10:40:15.272951" elapsed="11.025778"/>
+</kw>
+<test id="s1-s1-t1" name="Perform Web Automation" line="23">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:26.308774" level="INFO">Clicking element '//a[@href='/products']'.</msg>
+<arg>//a[@href='/products']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:26.308774" elapsed="0.074461"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:h2.title.text-center</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:40:26.383235" elapsed="0.009553"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//input[@name='search']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:40:26.392788" elapsed="2.143057"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:28.536987" level="INFO">Typing text 'Men' into text field '//input[@name='search']'.</msg>
+<arg>//input[@name='search']</arg>
+<arg>Men</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:28.536987" elapsed="0.086413"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:28.639412" level="INFO">Clicking button '//button[@type='button']'.</msg>
+<arg>//button[@type='button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:28.628397" elapsed="2.520499"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:h2.title.text-center</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:40:31.148896" elapsed="0.017286"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:31.166182" level="INFO">Clicking element '//a[@class='btn btn-default add-to-cart']'.</msg>
+<arg>//a[@class='btn btn-default add-to-cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:31.166182" elapsed="0.280355"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:31.450050" level="INFO">Clicking element 'css:a[href='/view_cart']'.</msg>
+<arg>css:a[href='/view_cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:31.449249" elapsed="1.549099"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Men</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:40:32.998348" elapsed="0.017272"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:33.015620" level="INFO">Clicking element '//a[@href='/login']'.</msg>
+<arg>//a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:33.015620" elapsed="1.680060"/>
+</kw>
+<kw name="INPUT_EMAIL">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:34.699829" level="INFO">Typing text '65022601@up.ac.th' into text field '//*[@name='email']'.</msg>
+<arg>//*[@name='email']</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:34.699829" elapsed="0.047454"/>
+</kw>
+<arg>${EMAIL}</arg>
+<status status="PASS" start="2024-01-29T10:40:34.695680" elapsed="0.051603"/>
+</kw>
+<kw name="INPUT_PASSWORD">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:34.747283" level="INFO">Typing text 'tumtum12' into text field '//*[@name='password']'.</msg>
+<arg>//*[@name='password']</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:34.747283" elapsed="0.035272"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-01-29T10:40:34.747283" elapsed="0.035272"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:34.782555" level="INFO">Clicking button '//button[text()='Login']'.</msg>
+<arg>//button[text()='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:34.782555" elapsed="3.520956"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-29T10:40:38.306716" level="INFO">Clicking element '//a[@href='/view_cart']'.</msg>
+<arg>//a[@href='/view_cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-29T10:40:38.305713" elapsed="0.888973"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Men</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-29T10:40:39.195814" elapsed="0.059969"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-29T10:40:39.256844" elapsed="3.309244"/>
+</kw>
+<status status="PASS" start="2024-01-29T10:40:26.298729" elapsed="16.267359"/>
+</test>
+<doc>This is a sample test suite using Robot Framework</doc>
+<status status="PASS" start="2024-01-29T10:40:14.981575" elapsed="27.591522"/>
+</suite>
+<status status="PASS" start="2024-01-29T10:40:14.947566" elapsed="27.629304"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="QuizRobot">QuizRobot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test">QuizRobot.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
