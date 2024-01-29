@@ -1,8 +1,6 @@
 *** Settings ***
-Documentation     This is a sample test suite using Robot Framework
 Library           SeleniumLibrary
 Suite Setup       Open Browser    https://automationexercise.com/
-# Suite Teardown    Close Browser
 
 *** Variables ***
 ${BROWSER}        chrome
